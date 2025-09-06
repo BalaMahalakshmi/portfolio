@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Portfolio — Bala Mahalakshmi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; --card:#0f1724; --accent1:#00ff9d; --accent2:#00b7ff; --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1200px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto; background:var(--bg); color:#e6eef6;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    #bg-scene{position:fixed; inset:0; z-index:0; pointer-events:none;}
+    .wrap{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:36px 22px;}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:28px;}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+    .logo-dot{width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#001020;}
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    nav{display:flex; gap:18px; align-items:center}
+    nav a{color:var(--muted); text-decoration:none; font-weight:600; padding:8px 10px; border-radius:8px}
+    nav a:hover{color:#fff; background:rgba(255,255,255,0.03)}
+    .cta{background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#001020; padding:8px 14px;border-radius:10px; font-weight:700; text-decoration:none}
+    .section{padding:60px 0}
+    .section-title{display:flex; align-items:center; gap:14px; margin-bottom:18px}
+    .section-title h3{margin:0; font-size:20px}
+    .underline{height:4px; width:84px; border-radius:4px; background:linear-gradient(90deg,var(--accent1),var(--accent2));}
+    .card{background:var(--card); padding:18px; border-radius:var(--radius); box-shadow:0 6px 30px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.02)}
+    .internship{margin-bottom:18px; padding:18px; border-radius:12px; background:rgba(255,255,255,0.02);}
+    .internship h4{margin:0 0 8px; color:var(--accent1);}
+    .projects-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .proj{background:var(--card); padding:16px; border-radius:12px; transition:transform .25s, box-shadow .25s}
+    .proj:hover{transform:translateY(-8px); box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+    .proj h4{margin:0 0 8px}
+    .proj p{color:var(--muted);font-size:14px}
+    .tags{display:flex; gap:8px; margin-top:12px; flex-wrap:wrap}
+    .tag{font-size:12px; padding:6px 8px; border-radius:8px; background:rgba(255,255,255,0.02); color:var(--muted)}
+    .skills-list{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .chip{padding:8px 12px; background:rgba(255,255,255,0.02); border-radius:999px; color:var(--muted); font-weight:600; font-size:13px}
+    footer{padding:28px 0; text-align:center; color:var(--muted); font-size:13px}
+  </style>
+</head>
+<body>
+  <div id="bg-scene"></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#home">
+        <div class="logo-dot">BB</div>
+        <div>
+          <h1>Bala Mahalakshmi Srinivasan</h1>
+          <div style="font-size:12px;color:var(--muted)">ML & Generative AI Engineer</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#internships">Internships</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="C:\Users\balam\Downloads\BalaMahalakshmi_resume.docx" download>Resume</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section">
+      <div class="section-title"><h3>Home</h3><div class="underline"></div></div>
+      <p>Hi, I’m Bala Mahalakshmi Srinivasan
+🎓 Pre-final year student in Artificial Intelligence & Data Science at Nadar Saraswathi College of Engineering and Technology, Theni.
+
+💡 I’m passionate about exploring AI, Machine Learning, and Data Science — turning raw data into meaningful insights and building intelligent solutions. With hands-on experience through multiple internships and projects, I’m on a journey to grow into a skilled AI/ML Engineer.
+
+🚀 My focus is on applying my knowledge of Python (Django, FastAPI), Scikit-learn, PyTorch, Pandas, NumPy, and Power BI to solve real-world problems while continuously learning and improving.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-title"><h3>About</h3><div class="underline"></div></div>
+      <p>I’m Bala Mahalakshmi Srinivasan from Theni, currently pursuing my B.Tech in Artificial Intelligence and Data Science. Over the last few years, 
+        I’ve built a strong foundation in AI, ML, and Data Analytics through academic learning, internships, and self-driven projects.
+🔹 What I Do:
+
+*AI & Machine Learning – Implementing ML/DL algorithms using Scikit-learn & PyTorch.
+*Python Development – Creating backend applications with Django & FastAPI.
+*Data Analysis – Cleaning, analyzing, and visualizing data using Pandas, NumPy, Matplotlib, Power BI.
+*Projects – From Fake News Detection to Disease Classification with CNNs, I apply my skills in impactful ways.
+
+🔹 My Strengths:
+
+*Fast learner who quickly adapts to new technologies.
+*Team player with good communication skills.
+*Problem-solver who can handle challenges with a calm mindset.
+
+🔹 My Vision
+
+*My short-term goal is to secure a role in a reputed MNC where I can contribute and grow as an AI/ML Engineer.
+*My long-term goal is to use AI to create impactful solutions for real-world challenges.
+
+✨ Outside of tech, I enjoy learning, exploring, and collaborating with others to build something meaningful.</p>
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section id="internships" class="section">
+      <div class="section-title"><h3>Internships</h3><div class="underline"></div></div>
+      <div class="internship">
+        <h4>AI & ML Intern – InLighnX Global Pvt. Ltd., Bangalore (Jul 2025 – Aug 2025)</h4>
+        <p>Developed Fake News Detection (TF-IDF, Logistic Regression, Naive Bayes) and Medical Image Classification (CNN, PyTorch). Worked with NLP, CV, Scikit-learn, PyTorch.</p>
+      </div>
+      <div class="internship">
+        <h4>Python Developer Intern – TM Innovations, Theni (Jan 2025 – Feb 2025)</h4>
+        <p>Designed backend apps with Django & FastAPI. Built REST APIs for efficient data exchange and integration.</p>
+      </div>
+      <div class="internship">
+        <h4>Software Development Intern – Rounds Edge Technologies, Coimbatore (Jul 2024 – Aug 2024)</h4>
+        <p>Learned SDLC, project documentation, testing, and version control in a real development environment.</p>
+      </div>
+      <div class="internship">
+        <h4>Data Analyst Intern (Remote) – Main Flow Service and Technology (Jun 2024 – Jul 2024)</h4>
+        <p>Performed data cleaning, preprocessing, visualization (Pandas, NumPy) and built dashboards using Power BI.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-title"><h3>Projects</h3><div class="underline"></div></div>
+      <div class="projects-grid">
+        <div class="proj">
+          <h4>Fake News Detection System</h4>
+          <p>Classify articles using TF-IDF, Logistic Regression, and Naive Bayes with focus on robustness.</p>
+          <div class="tags"><span class="tag">NLP</span><span class="tag">ML</span><span class="tag">TF-IDF</span></div>
+        </div>
+        <div class="proj">
+          <h4>Image Classification for Disease Detection</h4>
+          <p>Applied CNNs (PyTorch) to detect pneumonia from X-ray images with explainability.</p>
+          <div class="tags"><span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">Medical AI</span></div>
+        </div>
+        <div class="proj">
+          <h4>Python Web Applications</h4>
+          <p>Developed backend apps with Django & FastAPI, delivering scalable APIs.</p>
+          <div class="tags"><span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">Backend</span></div>
+        </div>
+        <div class="proj">
+          <h4>Data Analysis Dashboards</h4>
+          <p>Interactive business dashboards built using Power BI, Pandas, and Matplotlib.</p>
+          <div class="tags"><span class="tag">Pandas</span><span class="tag">Power BI</span><span class="tag">Visualization</span></div>
+        </div>
+        <div class="proj">
+          <h4>AI-legacy data extraction tool</h4>
+          <p>focuses on using AI tools (like OCR and NLP) to extract that data and process it into structured, usable formats (like Excel, JSON, or a new database).</p>
+          <div class="tags"><span class="tag">NLP</span><span class="tag">OCR</span><span class="tag">Backend</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-title"><h3>Skills</h3><div class="underline"></div></div>
+      <div class="skills-list">
+        <div class="chip">Streamlit</div>
+        <div class="chip">HTML</div>
+        <div class="chip">CSS</div>
+        <div class="chip">JavaScript</div>
+        <div class="chip">Python</div>
+        <div class="chip">Django</div>
+        <div class="chip">FastAPI</div>
+        <div class="chip">Scikit-learn</div>
+        <div class="chip">PyTorch</div>
+        <div class="chip">NLP</div>
+        <div class="chip">Deep Learning</div>
+        <div class="chip">Computer Vision</div>
+        <div class="chip">Pandas</div>
+        <div class="chip">NumPy</div>
+        <div class="chip">Matplotlib</div>
+        <div class="chip">Seaborn</div>
+        <div class="chip">Power BI</div>
+        <div class="chip">Git & GitHub</div>
+        <div class="chip">Google Colab</div>
+        <div class="chip">MongoDB</div>
+        <div class="chip">MySQL</div>
+        <div class="chip">Postgresql</div>
+        <div class="chip">OpenCV</div>
+        <div class="chip">Tensor Flow</div>
+        <div class="chip">LLM</div>
+        <div class="chip">PowerBI</div>
+        <div class="chip">Tableau</div>
+        <div class="chip">kaggle</div>
+        <div class="chip">Jupyter Notebook</div>
+        <div class="chip">Problem Solving</div>
+        <div class="chip">Adaptability</div>
+        <div class="chip">Team Collaboration</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-title"><h3>Contact</h3><div class="underline"></div></div>
+      <p>Email: <a href="mailto:your.email@example.com" style="color:var(--accent1);">balamahalakshmi.s@gmail.com</a></p>
+      <p>Phone: +91-8531896266</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/Bala_Mahalakshmi" target="_blank" style="color:var(--accent2);">linkedin.com/in/Bala_Mahalakshmi</a></p>
+      <p>GitHub: <a href="https://github.com/BalaMahalakshmi" target="_blank" style="color:var(--accent2);">github.com/BalaMahalakshmi</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> mahabi— Built with JavaScript & me
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
