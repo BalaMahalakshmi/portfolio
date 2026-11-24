@@ -1,50 +1,58 @@
+# Bala Mahalakshmi S. — Portfolio
 
-# Bala Bala — Portfolio
+A personal portfolio for **Bala Mahalakshmi S.** — AI Product Developer / AI & ML Engineer — built as a fast, single-file static website with a distinctive **Neural Bloom** (violet/pink) visual identity.
 
-A personal portfolio built with **Streamlit** showcasing my skills, projects, and contact information.  
-This app highlights my journey in **Machine Learning, Generative AI, and Data Engineering**, with a focus on real-world projects like medical image classification, fake news detection, and AI-based data extraction tools.
+## Highlights
 
----
+- **Neural Bloom design** — deep plum-dark base, violet→magenta→pink accents, glass surfaces, subtle grid, and a neural signal canvas.
+- **Signature Resume Capsule** — creative, accessible download button with gradient border, shimmer scan, icon micro-interaction, and real PDF download.
+- **Merged content** — combines current portfolio content, resume details, and newly added projects.
+- **Responsive & accessible** — semantic sections, skip link, visible focus, keyboard-friendly dialog/navigation, AA-minded contrast, and `prefers-reduced-motion` support.
+- **Interactive** — scroll progress, reveal animations, project filters, project detail dialog, mobile nav, theme toggle, and download toast.
 
-## 🌟 Features
-- 🧑‍💻 **About Me** — quick intro and career focus.  
-- 🛠 **Skills Section** — ML, DL, Generative AI, databases, and more.  
-- 📂 **Projects Showcase** — filterable by tags, expandable details, with links to code.  
-- 📩 **Contact Form** — submit your details (currently demo, extendable with email/MongoDB).  
-- 📄 **Resume Download** — PDF resume download button.  
-- 🎨 **Streamlit UI** — simple, clean, and interactive.
+## Files
 
----
+| File | Purpose |
+| --- | --- |
+| `porti.html` | The canonical portfolio site. Self-contained HTML/CSS/JS — deploy as-is. |
+| `Maha_ai_resume_trainer.pdf` | Resume file used by all Resume Capsule/download actions. |
 
-## 📸 Demo Screenshot
-![Portfolio Demo](screenshot.png)  
-*(Add a screenshot after running the app and save it as `screenshot.png` in your repo.)*
+## Run locally
 
----
+Open `porti.html` directly, or serve the folder:
 
-## ⚙️ Tech Stack
-- **Python 3.9+**
-- **Streamlit**
-- **pandas, numpy** (future data extensions)
-- **scikit-learn, PyTorch** (skills showcased)
-- **MongoDB/MySQL** (optional backend for CRUD)
+```bash
+python -m http.server 8000
+# then open http://localhost:8000/porti.html
+```
 
----
+## Deploy
 
-## Installation & Setup
+`porti.html` is static: push it to GitHub and enable **Pages**, or drag it into Netlify Drop / Cloudflare Pages. No build step or dependencies.
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   cd portfolio
-portfolio/
-│── app.py              # Streamlit app
-│── README.md           # Documentation
-│── screenshot.png      # Demo screenshot
-│── resume.pdf          # Your resume file
+## Before publishing
 
-Email: your.email@example.com
+1. **Verify merged details** — experience dates/institution details that were unclear in extraction are marked as placeholders/TODOs in content; update them as needed.
+2. **Profile links** — LinkedIn and GitHub are wired to your provided URLs; update if they change.
+3. **Resume filename** — resume downloads currently point to `Maha_ai_resume_trainer.pdf`. Rename/copy to a cleaner name if you prefer, and update links.
 
-LinkedIn: Your LinkedIn
+## Design system
 
-GitHub: Your GitHub
+| Token | Dark | Light |
+| --- | --- | --- |
+| Background | `#0B0814` / `#151024` | `#FBF8FF` / `#F3EEFF` |
+| Text | `#F7F4FF` | `#1A102B` |
+| Muted | `#B8AECF` | `#55466E` |
+| Violet | `#8B5CF6` | `#7C3AED` |
+| Pink | `#EC4899` | `#DB2777` |
+| Bloom | `#D946EF` | `#C026D3` |
+| Success | `#34D399` | `#059669` |
+
+Typography: **Space Grotesk** (display), **Inter** (body), **JetBrains Mono** (labels/data).
+
+## Content notes
+
+- **Name:** Bala Mahalakshmi S.
+- **Merged experience:** WrenchWise, Wynsync, InLighnX, TM Innovations, Rounds Edge, Main Flow.
+- **Merged projects:** AI Coding Agent with Docker Sandbox, LearnOS, Medical Image Classification, Fake News Detection, AI Resume Analyser, Face Recognition Attendance, Python Web Apps/APIs, AI Legacy Data Extraction, Data Analysis Dashboards.
+- **Recognition:** Kodaikanal Solar Observatory 1st Prize, corporate hackathon participation, selected certifications.
